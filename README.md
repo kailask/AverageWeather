@@ -1,5 +1,5 @@
 # AverageWeather
-Average Weather aggregates data from multiple sources to improve accuracy. This clean and intuitive app provides daily predictions seven days into the future, and hourly forecasts five days ahead.
+Average Weather aggregates data from multiple sources to improve accuracy. This clean and intuitive app provides daily predictions seven days into the future, and hourly forecasts five days ahead. The webservice for aggregating the data is contained in [Backend.](/Backend) The java files and xml are contained in src.
 </br>
 <div>
 <img src="Screenshots/1.png" width="30%">
