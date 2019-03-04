@@ -1,0 +1,111 @@
+<resources>
+    <!--Default strings for weather data-->
+    <string name="app_name">Average ⛅</string>
+    <string name="app_name_text">Average Weather</string>
+    <string name="default_preview_time_text">Undefined</string>
+    <string name="undefined_description_text">Undefined</string>
+    <string name="default_temp">--°</string>
+    <string name="default_percip">-.---in</string>
+    <string name="default_percipProb">--%</string>
+    <string name="default_wind">- mph</string>
+    <string name="error">Error!!</string>
+    <string name="cannot_parse_data">Cannot parse data</string>
+    <string name="report_code">Please report code </string>
+    <string name="code_12">Report Code 12:)</string>
+    <string name="wind_title">Wind</string>
+    <string name="default_wind_baring">---°</string>
+    <string name="default_cloud_cover">--%</string>
+    <string name="cloud_cover_text">Cloud cover: </string>
+    <string name="default_storm_distance">-- mi</string>
+    <string name="nearest_storm_text">Closest storm:</string>
+    <string name="precipitation_title">Precipitation</string>
+    <string name="humidity_label">Humidity</string>
+    <string name="pressure_label">Pressure</string>
+    <string name="sunset_label">Sunset</string>
+    <string name="sunrise_label">Sunrise</string>
+    <string name="default_humidity">--%</string>
+    <string name="default_pressure">---- mBAR</string>
+    <string name="default_time">-:-- AM</string>
+    <string name="default_update_time">Updated Undefined</string>
+    <string name="default_location_text">Undefined</string>
+
+    <!--Transition Keys-->
+    <string name="current_icon_shared_transition_name">currentWeatherIconLarge</string>
+    <string name="current_background_transition_name">currentCardBackground</string>
+    <string name="nav_bar_transition_key">navBar</string>
+    <string name="status_bar_transition_key">statusBar</string>
+    <string name="action_bar_transition_key">actionBar</string>
+    <string name="detail_visibility_label">Visibility:</string>
+    <string name="default_visibility_text">-- mi</string>
+    <string name="default_at_time"> at -:--AM</string>
+    <string name="error_2">Error!!</string>
+
+    <string name="current_detail_icon_position_division_factor">1.7</string>
+    <string name="weekly_toolbar_text_prefix">"This week in "</string>
+    <string name="daily_preview_icon_transition_key">dailyPreviewIconKey</string>\
+
+    <!--Accessibility-->
+    <string name="open_drawer">Open Drawer</string>
+    <string name="close_drawer">Close Drawer</string>
+    <string name="manage_locations_title">Manage Locations</string>
+    <string name="hint_search">Search Locations</string>
+    <string name="sorry_we_couldnt_find_that_place">Sorry, we couldn\'t find that place :(</string>
+    <string name="try_searching_for_a_city_or_locality">Try searching for a city or locality</string>
+
+    <string name="overview_nav_name">Overview</string>
+    <string name="locations_nav_name">Locations</string>
+    <string name="settings_nav_name">Settings</string>
+    <string name="settings_toolbar_text">Settings</string>
+
+    <string name="unit_settings_title">Units</string>
+
+    <string name="pref_temp_unit_title">Temperature</string>
+    <string name="pref_temp_unit_key">TEMPERATURE_UNIT</string>
+    <string name="pref_default_temp_unit">Imperial, F°</string>
+
+    <string name="pref_speed_unit_title">Speed</string>
+    <string name="pref_speed_unit_key">SPEED_UNIT</string>
+    <string name="pref_default_speed_unit">Imperial, mph</string>
+    <string name="pref_other_speed_unit">Metric, kph</string>
+
+    <string name="pref_distance_unit_title">Distance</string>
+    <string name="pref_distance_unit_key">DISTANCE_UNIT</string>
+    <string name="pref_default_distance_unit">Imperial, mi</string>
+
+    <string name="pref_rain_unit_title">Precipitation</string>
+    <string name="pref_rain_unit_key">RAIN_UNIT</string>
+    <string name="pref_default_rain_unit">Imperial, in</string>
+    <string name="powered_by_forecast_badge">Powered by Forecast.io</string>
+    <string name="powered_by_openweathermap_badge">Powered by OpenWeatherMap</string>
+
+    <string name="app_version">Beta v.04</string>
+    <string name="contact_text">Contact</string>
+    <string name="data_may_have_been_modified_from_its_original_form_text">Data may have been modified from its original form</string>
+    <string name="about_nav_name">About</string>
+    <string name="contact_nav_name">Contact</string>
+    <string name="report_nav_name">Report a bug</string>
+    <string name="about_toolbar_text">About</string>
+
+    <string-array name="pref_temp_units">
+        <item>Imperial, F°</item>
+        <item>Metric, C°</item>
+    </string-array>
+
+    <string-array name="pref_speed_units">
+        <item>Imperial, mph</item>
+        <item>Metric, kph</item>
+        <item>Nautical, kn</item>
+    </string-array>
+
+    <string-array name="pref_distance_units">
+        <item>Imperial, mi</item>
+        <item>Metric, km</item>
+    </string-array>
+
+    <string-array name="pref_rain_units">
+        <item>Imperial, in</item>
+        <item>Metric, mm</item>
+    </string-array>
+
+
+</resources>

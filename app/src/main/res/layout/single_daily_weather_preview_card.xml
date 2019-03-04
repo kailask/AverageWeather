@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:elevation="@dimen/single_preview_card_elevation"
+    app:cardElevation="@dimen/single_preview_card_elevation"
+    android:focusable="true"
+    android:clickable="true"
+    android:foreground="?attr/selectableItemBackground"
+    android:layout_marginStart="@dimen/single_preview_card_start_margin"
+    android:layout_marginTop="@dimen/preview_card_margin_top"
+    android:layout_marginBottom="@dimen/preview_card_margin_bottom"
+    android:stateListAnimator="@animator/lift_on_touch">
+
+    <LinearLayout
+        android:layout_width="@dimen/daily_preview_card_width"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/preview_card_padding"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/default_preview_time_text"
+            android:id="@+id/daily_preview_time_short"
+            android:textSize="@dimen/preview_card_text_size_large"
+            android:maxLength="10"
+            />
+
+        <xyz.eleventhour.averageweather.FadeNetworkImageView
+            android:layout_width="@dimen/preview_card_icon_size"
+            android:layout_height="@dimen/preview_card_icon_size"
+            android:transitionName="@string/daily_preview_icon_transition_key"
+            android:src="@drawable/ic_weather_large_default"
+            android:id="@+id/daily_preview_icon"
+            android:padding="@dimen/preview_card_icon_padding"
+            android:scaleType="fitXY"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/preview_card_detail_icon_size"
+                    android:layout_height="@dimen/preview_card_detail_icon_size"
+                    android:src="@drawable/ic_temp"
+                    android:id="@+id/daily_preview_temp_icon"
+                    android:scaleType="fitXY"
+                    android:layout_margin="@dimen/preview_card_detail_icon_margin"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="@string/default_temp"
+                    android:textSize="@dimen/preview_card_text_size_large"
+                    android:textStyle="bold"
+                    android:id="@+id/daily_preview_card_temp_hi"
+                    android:maxLength="5" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/default_temp"
+                    android:textSize="@dimen/preview_card_text_size_main"
+                    android:id="@+id/daily_preview_card_temp_low"
+                    android:maxLength="5"
+                    android:fontFamily="sans-serif-condensed"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/preview_card_detail_icon_size"
+                    android:layout_height="@dimen/preview_card_detail_icon_size"
+                    android:src="@drawable/ic_percip"
+                    android:id="@+id/daily_preview_percip_icon"
+                    android:scaleType="fitXY"
+                    android:layout_margin="@dimen/preview_card_detail_icon_margin"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/default_percipProb"
+                    android:textSize="@dimen/preview_card_text_size_large"
+                    android:id="@+id/daily_preview_card_percipProb"
+                    android:textStyle="bold"
+                    android:textColor="@color/percipBlue"
+                    android:maxLength="6" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/default_percip"
+                    android:textSize="@dimen/preview_card_text_size_main"
+                    android:fontFamily="sans-serif-condensed"
+                    android:id="@+id/daily_preview_card_percip"
+                    android:maxLength="8" />
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

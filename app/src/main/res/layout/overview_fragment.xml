@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xyz.eleventhour.averageweather.VerticalSwipeToRefresh
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:id="@+id/swipe_layout">
+
+    <ScrollView android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/overview_scrollview"
+        android:scrollbars="none">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/main_overview_layout"
+            android:gravity="center_horizontal">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/currently_card_frame"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/daily_preview_frame"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/hourly_preview_frame"/>
+
+            <include layout="@layout/footer"/>
+        </LinearLayout>
+    </ScrollView>
+</xyz.eleventhour.averageweather.VerticalSwipeToRefresh>

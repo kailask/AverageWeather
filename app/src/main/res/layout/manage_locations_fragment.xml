@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/location_manager_layout"
+    android:transitionGroup="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/location_manager_list_layout">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/google_logo_margin"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white"
+            android:elevation="@dimen/detail_card_elevation"
+            android:id="@+id/google_attribution"
+            android:src="@drawable/powered_by_google_light"
+            />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/location_manager_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/google_attribution"/>
+
+    </RelativeLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/fab_margin"
+        android:id="@+id/add_location_fab"
+        android:focusable="true"
+        android:clickable="true"
+        app:fabSize="normal"
+        app:layout_anchor="@id/location_manager_list_layout"
+        app:layout_anchorGravity="bottom|right|end"
+        android:src="@drawable/ic_add"/>
+
+</android.support.design.widget.CoordinatorLayout>

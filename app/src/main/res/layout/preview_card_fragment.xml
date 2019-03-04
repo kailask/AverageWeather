@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/preview_card_background_height"
+        android:layout_marginLeft="@dimen/card_side_margin"
+        android:layout_marginRight="@dimen/card_side_margin"
+        android:id="@+id/preview_card_background"
+        android:elevation="@dimen/card_elevation"
+        android:layout_marginBottom="@dimen/card_bottom_margin"
+        android:layout_marginTop="@dimen/card_top_margin"
+        />
+
+    <TextView
+        android:layout_margin="@dimen/preview_card_padding"
+        android:paddingTop="@dimen/preview_card_desc_text_padding_top"
+        android:paddingStart="@dimen/preview_card_desc_padding"
+        android:paddingEnd="@dimen/preview_card_desc_padding"
+        android:layout_alignParentStart="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/undefined_description_text"
+        android:textSize="@dimen/preview_card_desc_text_size"
+        android:fontFamily="sans-serif-condensed"
+        android:id="@+id/preview_card_description"
+        android:elevation="@dimen/card_elevation"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/preview_card_description"
+        android:id="@+id/preview_card_list_holder"
+        android:layout_centerVertical="true"
+        android:scrollbars="none"
+        android:elevation="@dimen/card_elevation"/>
+
+</RelativeLayout>

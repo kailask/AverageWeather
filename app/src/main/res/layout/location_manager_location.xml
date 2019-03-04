@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    app:contentPadding="@dimen/detail_card_padding"
+    android:elevation="@dimen/cardview_default_elevation"
+    app:cardElevation="@dimen/cardview_default_elevation"
+    android:layout_marginLeft="@dimen/card_side_margin"
+    android:layout_marginRight="@dimen/card_side_margin"
+    android:layout_marginTop="4dp"
+    android:layout_marginBottom="4dp"
+    android:foreground="?selectableItemBackground"
+    android:focusable="true"
+    android:clickable="true"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_location_city"
+            android:id="@+id/location_icon"
+            android:layout_marginEnd="@dimen/detail_card_icon_margin_end"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_prediction_size"
+            android:layout_toEndOf="@id/location_icon"
+            android:textColor="@color/black"
+            android:id="@+id/location_title"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/location_title"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:layout_toEndOf="@id/location_icon"
+            android:id="@+id/location_coords"/>
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

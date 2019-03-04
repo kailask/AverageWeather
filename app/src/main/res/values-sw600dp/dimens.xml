@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Overridden for tablets-->
+    <dimen name="card_side_margin">50dp</dimen>
+    <dimen name="icon_large_size">170dp</dimen>
+    <dimen name="text_description_size">30sp</dimen>
+
+    <dimen name="first_card_top_margin">25dp</dimen>
+    <dimen name="card_bottom_margin">25dp</dimen>
+    <dimen name="currently_card_margin">20dp</dimen>
+
+    <dimen name="text_large">22sp</dimen>
+    <dimen name="text_uber_large">100sp</dimen>
+
+    <dimen name="preview_card_desc_padding">70dp</dimen>
+    <dimen name="preview_card_desc_text_padding_top">20dp</dimen>
+    <dimen name="preview_card_desc_text_size">20sp</dimen>
+
+    <dimen name="detail_background_image_height">420dp</dimen>
+
+    <dimen name="preview_card_background_height">290dp</dimen>
+    <dimen name="detail_header_padding_bottom">15dp</dimen>
+    <dimen name="detail_header_text_margin_top">90dp</dimen>
+    <dimen name="detail_header_text_small">17sp</dimen>
+    <dimen name="detail_card_layout_overlap">100dp</dimen>
+    <dimen name="detail_card_layout_overlap_inverse">-100dp</dimen>
+
+    <dimen name="detail_toolbar_icon_margin_left">60dp</dimen>
+
+    <dimen name="detail_header_text_large">100sp</dimen>
+
+    <dimen name="first_tab_offset">300dp</dimen>
+
+    <dimen name="fab_margin">24dp</dimen>
+</resources>

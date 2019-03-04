@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item android:title="@string/overview_nav_name"
+            android:id="@+id/overview_nav_fragment"
+            android:icon="@drawable/ic_overview"/>
+        <item android:title="@string/locations_nav_name"
+            android:id="@+id/locations_nav_fragment"
+            android:icon="@drawable/ic_location_city"/>
+        <item android:title="@string/settings_nav_name"
+            android:id="@+id/settings_nav_fragment"
+            android:icon="@drawable/ic_settings"/>
+        <item android:title="@string/report_nav_name"
+            android:checkable="false"
+            android:id="@+id/report_nav_link" />
+        <item android:title="@string/about_nav_name"
+            android:id="@+id/about_nav_fragment" />
+        <item android:title="@string/contact_nav_name"
+            android:checkable="false"
+            android:id="@+id/contact_nav_link" />
+    </group>
+</menu>

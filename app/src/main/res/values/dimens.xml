@@ -1,0 +1,92 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+
+    <!--values for hourly and daily single preview cards and the cards that contain them-->
+    <dimen name="hourly_preview_card_width">110dp</dimen>
+    <dimen name="daily_preview_card_width">100dp</dimen>
+    <dimen name="preview_card_margin_top">10dp</dimen>
+    <dimen name="preview_card_margin_bottom">13dp</dimen>
+    <dimen name="preview_card_padding">7dp</dimen>
+    <dimen name="preview_card_icon_padding">2dp</dimen>
+    <dimen name="preview_card_text_size_main">11sp</dimen>
+    <dimen name="preview_card_icon_size">70dp</dimen>
+    <dimen name="preview_card_desc_margin">10dp</dimen>
+    <dimen name="preview_card_detail_icon_size">13dp</dimen>
+    <dimen name="detail_arrow_icon_size">20dp</dimen>
+    <dimen name="preview_card_detail_icon_margin">3dp</dimen>
+    <dimen name="preview_card_text_size_large">13sp</dimen>
+    <dimen name="preview_card_elevation">2dp</dimen><!--base elevation for a preview list card-->
+    <dimen name="single_preview_card_elevation">4dp</dimen><!--elevation for individual cards in preview list-->
+    <dimen name="preview_card_desc_padding">20dp</dimen>
+    <dimen name="single_preview_card_start_margin">15dp</dimen>
+    <dimen name="preview_card_desc_text_size">13sp</dimen>
+    <dimen name="preview_card_background_height">260dp</dimen>
+    <dimen name="preview_card_desc_text_padding_top">5dp</dimen>
+
+    <dimen name="text_large">17sp</dimen>
+    <dimen name="text_uber_large">90sp</dimen>
+
+    <dimen name="card_side_margin">7dp</dimen>
+
+    <!--Has margin of 0 to show shadow-->
+    <dimen name="card_top_margin">0dp</dimen>
+
+    <dimen name="card_bottom_margin">8dp</dimen>
+
+    <!--Used only in the first (currently) card in overview-->
+    <dimen name="first_card_top_margin">8dp</dimen>
+
+    <!--used in currently card-->
+    <dimen name="text_description_size">20sp</dimen>
+    <dimen name="icon_large_size">120dp</dimen>
+    <dimen name="currently_card_margin">10dp</dimen>
+
+    <dimen name="default_toolbar_elevation">4dp</dimen>
+    <dimen name="icon_size_small">50dp</dimen>
+    <dimen name="detail_card_padding">15dp</dimen>
+    <dimen name="text_toolbar_size">20sp</dimen>
+    <dimen name="detail_card_icon_margin_end">15dp</dimen>
+    <dimen name="detail_card_text_size">20sp</dimen>
+    <dimen name="detail_card_content_divider_width">30dp</dimen>
+    <dimen name="detail_label_margin_end">7dp</dimen>
+    <dimen name="detail_background_image_height">260dp</dimen>
+    <dimen name="detail_card_layout_overlap">30dp</dimen>
+    <dimen name="detail_card_layout_overlap_inverse">-30dp</dimen>
+    <dimen name="toolbar_content_divider_width">5dp</dimen>
+    <dimen name="icon_medium">30dp</dimen>
+    <dimen name="detail_header_padding_bottom">35dp</dimen>
+    <dimen name="detail_header_text_small">15sp</dimen>
+    <dimen name="footer_text_small">12sp</dimen>
+    <dimen name="text_medium_large">40sp</dimen>
+    <dimen name="detail_header_text_padding">20dp</dimen>
+    <dimen name="detail_header_text_margin_top">70dp</dimen>
+    <dimen name="detail_header_text_margin_top_wide">24sp</dimen>
+    <dimen name="detail_header_desc_wide_text_size">23sp</dimen>
+
+    <dimen name="card_elevation">2dp</dimen>
+    <dimen name="detail_card_elevation">5dp</dimen>
+    <dimen name="detail_header_text_large">60sp</dimen>
+
+    <dimen name="detail_toolbar_icon_margin_left">50dp</dimen>
+    <dimen name="preview_data_padding_top">70dp</dimen>
+    <dimen name="small_content_divider_size">10dp</dimen>
+    <dimen name="text_detail_small_size">17sp</dimen>
+    <dimen name="first_tab_offset">100dp</dimen>
+    <dimen name="tab_bar_height">48dp</dimen>
+    <dimen name="daily_detail_collapsed_toolbar_height">104dp</dimen>
+    <dimen name="daily_detail_toolbar_text_margin_top">28dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="loading_wheel_margin_top">200dp</dimen>
+    <dimen name="google_logo_margin">10dp</dimen>
+    <dimen name="text_prediction_size">18sp</dimen>
+    <dimen name="text_prediction_padding">20dp</dimen>
+    <dimen name="text_prediction_subtitle">12sp</dimen>
+    <dimen name="location_manager_card_margin">10dp</dimen>
+    <dimen name="daily_detail_summary_text_bonus_padding">10dp</dimen>
+    <dimen name="nav_header_text_size">30sp</dimen>
+    <dimen name="header_text_margin">10dp</dimen>
+    <dimen name="footer_padding">5dp</dimen>
+</resources>

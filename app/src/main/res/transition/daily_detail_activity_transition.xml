@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<transitionSet xmlns:android="http://schemas.android.com/apk/res/android">
+    <slide android:slideEdge="top">
+        <targets>
+            <target android:targetId="@id/daily_detail_appbar"/>
+            <target android:targetId="@id/detail_tabs_layout"/>
+        </targets>
+    </slide>
+    <slide android:slideEdge="bottom">
+        <targets>
+            <target android:targetId="@id/daily_detail_pager"/>
+        </targets>
+    </slide>
+</transitionSet>

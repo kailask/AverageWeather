@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/detail_layout"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!--TODO: show header side-by-side if in landscape-->
+    <android.support.design.widget.AppBarLayout
+        android:fitsSystemWindows="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/detail_appbar"
+        app:elevation="@dimen/default_toolbar_elevation">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:contentScrim="@color/colorPrimary"
+            android:id="@+id/currently_detail_collapsing_layout"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed|snap">
+
+            <include layout="@layout/current_detail_background"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <include layout="@layout/currently_detail_header_portrait"
+                android:id="@+id/detail_summary_layout_include" />
+
+            <android.support.v7.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark"
+                android:background="@color/transparent"
+                android:elevation="@dimen/default_toolbar_elevation"
+                android:id="@+id/detail_toolbar">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <android.support.v4.widget.Space
+                        android:layout_width="@dimen/toolbar_content_divider_width"
+                        android:layout_height="@dimen/toolbar_content_divider_width" />
+
+                    <android.support.v4.widget.Space
+                        android:layout_width="@dimen/icon_medium"
+                        android:layout_height="@dimen/icon_medium"
+                        android:id="@+id/detail_toolbar_icon_placeholder" />
+
+                    <android.support.v4.widget.Space
+                        android:layout_width="@dimen/toolbar_content_divider_width"
+                        android:layout_height="@dimen/toolbar_content_divider_width" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/text_toolbar_size"
+                        android:textColor="@color/white"
+                        android:id="@+id/detail_toolbar_desc"
+                        android:translationX="100dp"
+                        android:text="@string/undefined_description_text"
+                        android:alpha="0"/>
+                </LinearLayout>
+            </android.support.v7.widget.Toolbar>
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:translationY="5000dp"
+        android:transitionGroup="true"
+        android:clipToPadding="false"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:scrollbars="none"
+        app:behavior_overlapTop="@dimen/detail_card_layout_overlap"
+        android:id="@+id/detail_data_holder">
+
+        <include layout="@layout/current_detail_cards"/>
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <xyz.eleventhour.averageweather.FadeNetworkImageView
+        android:layout_width="@dimen/icon_large_size"
+        android:layout_height="@dimen/icon_large_size"
+        android:layout_gravity="center_horizontal"
+        android:transitionName="@string/current_icon_shared_transition_name"
+        app:layout_behavior="xyz.eleventhour.averageweather.LargeDetailHeaderIconBehavior"
+        android:id="@+id/detail_icon_large"
+        android:elevation="@dimen/default_toolbar_elevation"/>
+
+</android.support.design.widget.CoordinatorLayout>

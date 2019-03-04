@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--TODO: Remove static background color-->
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_marginLeft="@dimen/card_side_margin"
+    android:layout_marginRight="@dimen/card_side_margin"
+    android:layout_marginBottom="@dimen/card_bottom_margin"
+    android:layout_marginTop="@dimen/first_card_top_margin"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusable="true"
+    android:elevation="@dimen/card_elevation"
+    android:foreground="?attr/selectableItemBackground"
+    android:id="@+id/currently_card_background"
+    android:transitionName="@string/current_background_transition_name"
+    android:clickable="true"
+    android:stateListAnimator="@animator/lift_on_touch">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/preview_card_padding"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/undefined_description_text"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:fontFamily="sans-serif-light"
+            android:textSize="@dimen/text_description_size"
+            android:textColor="@color/white"
+            android:layout_margin="@dimen/currently_card_margin"
+            android:id="@+id/currently_card_description" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:id="@+id/currently_temperature"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/currently_card_description"
+            android:layout_marginStart="@dimen/currently_card_margin"
+            android:layout_alignParentStart="true"
+            android:text="@string/default_temp"
+            android:fontFamily="sans-serif-thin"
+            android:textSize="@dimen/text_uber_large"/>
+
+        <xyz.eleventhour.averageweather.FadeNetworkImageView
+            android:transitionName="@string/current_icon_shared_transition_name"
+            android:layout_width="@dimen/icon_large_size"
+            android:layout_height="@dimen/icon_large_size"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_weather_large_default"
+            android:id="@+id/currently_card_icon"
+            android:layout_centerVertical="true"
+            />
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

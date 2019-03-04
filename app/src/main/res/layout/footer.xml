@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:id="@+id/footer_layout"
+    android:visibility="invisible"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/footer_updated_time"
+        android:textSize="@dimen/footer_text_small"
+        android:text="@string/default_update_time"
+        android:padding="@dimen/footer_padding"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/footer_text_small"
+        android:text="@string/data_may_have_been_modified_from_its_original_form_text"
+        android:padding="@dimen/footer_padding"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/forecast_badge"
+        android:textSize="@dimen/footer_text_small"
+        android:text="@string/powered_by_forecast_badge"
+        android:onClick="onAttributionClick"
+        android:focusable="true"
+        android:clickable="true"
+        android:foreground="?selectableItemBackground"
+        android:padding="@dimen/footer_padding"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/openweathermap_badge"
+        android:textSize="@dimen/footer_text_small"
+        android:text="@string/powered_by_openweathermap_badge"
+        android:onClick="onAttributionClick"
+        android:focusable="true"
+        android:clickable="true"
+        android:foreground="?selectableItemBackground"
+        android:padding="@dimen/footer_padding"/>
+
+</LinearLayout>

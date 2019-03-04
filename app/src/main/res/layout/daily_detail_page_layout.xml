@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/daily_detail_scroll_view">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <include layout="@layout/daily_detail_temp_card"/>
+
+        <!--Margins are overridden because this is not the first card and needs a top margin-->
+        <include layout="@layout/percip_detail_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/card_side_margin"
+            android:layout_marginRight="@dimen/card_side_margin"
+            android:layout_marginBottom="@dimen/card_bottom_margin"
+            android:layout_marginTop="@dimen/card_top_margin"/>
+
+        <include layout="@layout/wind_detail_card"/>
+        <include layout="@layout/daily_clouds_detail_card"/>
+        <include layout="@layout/detail_details_card"/>
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

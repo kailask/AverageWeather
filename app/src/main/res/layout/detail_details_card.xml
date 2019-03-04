@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginLeft="@dimen/card_side_margin"
+    android:layout_marginRight="@dimen/card_side_margin"
+    android:layout_marginBottom="@dimen/card_bottom_margin"
+    android:layout_marginTop="@dimen/card_top_margin"
+    android:elevation="@dimen/card_elevation"
+    app:cardElevation="@dimen/detail_card_elevation">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/detail_card_padding"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/detail_card_text_size"
+                android:text="@string/humidity_label"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/detail_card_text_size"
+                android:text="@string/default_humidity"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif-condensed"
+                android:id="@+id/detail_humidity_value"/>
+
+            <android.support.v4.widget.Space
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/detail_card_content_divider_width"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/detail_card_text_size"
+                android:text="@string/pressure_label"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/detail_card_text_size"
+                android:text="@string/default_pressure"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif-condensed"
+                android:id="@+id/detail_pressure_value"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/detail_card_text_size"
+                android:text="@string/sunrise_label"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/detail_card_text_size"
+                android:text="@string/default_time"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif-condensed"
+                android:id="@+id/detail_sunrise_value"/>
+
+            <android.support.v4.widget.Space
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/detail_card_content_divider_width"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/detail_card_text_size"
+                android:text="@string/sunset_label"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/detail_card_text_size"
+                android:text="@string/default_time"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif-condensed"
+                android:id="@+id/detail_sunset_value"/>
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

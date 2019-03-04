@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:id="@+id/daily_detail_appbar"
+        android:elevation="@dimen/default_toolbar_elevation">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/daily_detail_collapsing_layout"
+            app:layout_scrollFlags="enterAlwaysCollapsed|scroll|exitUntilCollapsed|snap"
+            android:elevation="@dimen/default_toolbar_elevation">
+
+            <android.support.v7.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/daily_detail_collapsed_toolbar_height"
+                android:id="@+id/detail_toolbar"
+                app:layout_collapseMode="pin"
+                android:gravity="top|start"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark"
+                android:elevation="@dimen/default_toolbar_elevation"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="@dimen/daily_detail_toolbar_text_margin_top"
+                    android:textSize="@dimen/text_toolbar_size"
+                    android:ellipsize="end"
+                    android:id="@+id/daily_detail_toolbar_text"/>
+
+            </android.support.v7.widget.Toolbar>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="?attr/actionBarSize"
+                android:paddingTop="@dimen/daily_detail_summary_text_bonus_padding"
+                app:layout_collapseMode="parallax">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:text="@string/undefined_description_text"
+                    android:id="@+id/detail_week_desc_text"
+                    android:padding="@dimen/detail_card_padding"
+                    android:textSize="@dimen/text_large" />
+
+                <android.support.v4.widget.Space
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/tab_bar_height"
+                    android:id="@+id/detail_tab_bar_placeholder"/>
+
+                <android.support.v4.widget.Space
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/detail_card_layout_overlap" />
+
+            </LinearLayout>
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.view.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/daily_detail_pager"
+        android:transitionGroup="true"
+        app:behavior_overlapTop="@dimen/detail_card_layout_overlap"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    <android.support.design.widget.TabLayout
+        android:layout_width="match_parent"
+        app:tabMinWidth="70dp"
+        app:tabMaxWidth="170dp"
+        android:layout_height="@dimen/tab_bar_height"
+        android:visibility="invisible"
+        app:tabTextColor="@color/white"
+        app:tabSelectedTextColor="@color/white"
+        app:layout_behavior="xyz.eleventhour.averageweather.DailyDetailHeaderTabsBehavior"
+        android:elevation="@dimen/default_toolbar_elevation"
+        app:tabMode="scrollable"
+        app:tabContentStart="@dimen/first_tab_offset"
+        android:id="@+id/detail_tabs_layout"/>
+
+</android.support.design.widget.CoordinatorLayout>

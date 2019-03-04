@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/unit_settings_title">
+        <ListPreference
+            android:title="@string/pref_temp_unit_title"
+            android:key="@string/pref_temp_unit_key"
+            android:entries="@array/pref_temp_units"
+            android:entryValues="@array/pref_temp_units"
+            android:defaultValue="Imperial, F°"
+            />
+
+        <ListPreference
+            android:title="@string/pref_speed_unit_title"
+            android:key="@string/pref_speed_unit_key"
+            android:entries="@array/pref_speed_units"
+            android:entryValues="@array/pref_speed_units"
+            android:defaultValue="Imperial, mph"
+            />
+
+        <ListPreference
+            android:title="@string/pref_distance_unit_title"
+            android:key="@string/pref_distance_unit_key"
+            android:entries="@array/pref_distance_units"
+            android:entryValues="@array/pref_distance_units"
+            android:defaultValue="Imperial, mi"
+            />
+
+        <ListPreference
+            android:title="@string/pref_rain_unit_title"
+            android:key="@string/pref_rain_unit_key"
+            android:entries="@array/pref_rain_units"
+            android:entryValues="@array/pref_rain_units"
+            android:defaultValue="Imperial, in"
+            />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Persistent Notification">
+        <SwitchPreference android:title="Enable persistent notification"
+            android:summary="Show a notification displaying weather data for a selected location"
+            android:key="KEY"
+            android:defaultValue="false"/>
+
+        <ListPreference
+            android:title="Notification location"/>
+
+        <CheckBoxPreference android:title="Show large notification"
+            android:summary="Always show the notification in its expanded size"
+            />
+
+        <ListPreference
+            android:title="Notification layout"/>
+    </PreferenceCategory>
+</PreferenceScreen>
