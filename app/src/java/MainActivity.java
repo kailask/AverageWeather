@@ -215,7 +215,7 @@ public class MainActivity extends NetworkManager.DataHandlerActivity implements 
                 }
                 return;
             case R.id.report_nav_link:
-                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://groups.google.com/forum/#!topic/average-weather/DurWbg3bM0s")));
+                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://groups.google.com")));
                 return;
         }
 
